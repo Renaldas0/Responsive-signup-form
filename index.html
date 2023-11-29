@@ -7,29 +7,43 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
   <!-- Sign-up form start -->
+  <main id="newsletter">
 
-  Stay updated!
+    <div id="info-container">
 
-  Join 60,000+ product managers receiving monthly updates on:
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>
+          <span><img src="./assets/images/icon-list.svg" alt=""></span>Product discovery and building what matters
+        </li>
+        <li>
+          <span><img src="./assets/images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success
+        </li>
+        <li>
+          <span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!
+        </li>
+      </ul>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+      <h3>Email address</h3>
 
-  Email address
-  email@company.com
+      <form id="form" action="">
+        <input type="email" placeholder="email@company.com">
+        <button type="submit" id="submit-btn">Subscribe to monthly newsletter</button>
+      </form>
+      
+    </div>
 
-  Subscribe to monthly newsletter
+    <div id="image-container">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+    </div>
+    
+  </main>
 
   <!-- Sign-up form end -->
 
@@ -44,9 +58,9 @@
 
   <!-- Success message end -->
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Renaldas Bendikas</a>.
+  </footer>
 </body>
 </html>
