@@ -33,11 +33,13 @@
           <span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!
         </li>
       </ul>
-
-      <h3>Email address</h3>
+      <div id="above-input">
+        <h3>Email address</h3>
+        <span id="error-msg"></span>
+      </div>
 
       <form id="form" action="">
-        <input type="email" placeholder="email@company.com" required>
+        <input id="email-input" type="text" placeholder="email@company.com">
         <button type="submit" id="submit-btn">Subscribe to monthly newsletter</button>
       </form>
       
@@ -48,7 +50,7 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-  <div id="success-container">
+  <div id="success-container" class="hidden">
     <div class="img-container">
       <img src="./assets/images/icon-success.svg" alt="success icon">
     </div>
@@ -56,7 +58,7 @@
       <h2>Thanks for subscribing!</h2>
       <p>A confirmation email has been sent to ash@loremcompany.com. 
       Please open it and click the button inside to confirm your subscription.</p>
-      <button>Dismiss message</button>
+      <button id="dismiss-btn">Dismiss message</button>
     </div>
   </div>
 
@@ -66,5 +68,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Renaldas Bendikas</a>.
   </footer>
+  <script src="./index.js"></script>
 </body>
 </html>
