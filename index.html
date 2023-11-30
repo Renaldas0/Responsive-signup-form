@@ -37,7 +37,7 @@
       <h3>Email address</h3>
 
       <form id="form" action="">
-        <input type="email" placeholder="email@company.com">
+        <input type="email" placeholder="email@company.com" required>
         <button type="submit" id="submit-btn">Subscribe to monthly newsletter</button>
       </form>
       
@@ -48,13 +48,17 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
+  <div id="success-container">
+    <div class="img-container">
+      <img src="./assets/images/icon-success.svg" alt="success icon">
+    </div>
+    <div>
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to ash@loremcompany.com. 
+      Please open it and click the button inside to confirm your subscription.</p>
+      <button>Dismiss message</button>
+    </div>
+  </div>
 
   <!-- Success message end -->
   
