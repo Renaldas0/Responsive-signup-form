@@ -58,7 +58,7 @@ body {
 #info-container {
     height: 100%;
     width: 50%;
-    padding: 0 20px;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,24 +73,31 @@ body {
 h1 {
     font-size: 3.5em;
     font-weight: 700;
-    padding: 2em 0 .5em;
+    padding: 1.5em 0 .5em;
 }
 
 p {
     font-size: 16px;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
 }
 
-ul {
-    padding-bottom: 35px;
+#info-list {
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-ul li {
-    line-height: 2em;
+#info-list li {
+    overflow: hidden;
+    /* Clear floats */
 }
 
-ul li span {
+#info-list span {
+    float: left;
     padding-right: 20px;
+}
+
+#info-list p {
+    overflow: hidden;
 }
 
 h4 {
@@ -98,6 +105,7 @@ h4 {
 }
 
 form {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -109,7 +117,7 @@ form input {
     padding: 15px;
     font-size: 1.1em;
     border-radius: 5px;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 }
 
 form button {
@@ -120,6 +128,14 @@ form button {
     background-color: var(--Dark-Slate-Grey);
     border-radius: 5px;
     margin-bottom: 50px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#error-msg {
+    color: var(--primary);
 }
 
 footer {

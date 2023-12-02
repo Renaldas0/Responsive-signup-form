@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) => {
         emailInput.style.background = errorBgColor;
     } else if (!emailRegex.test(emailInput.value)) {
         console.log('email is not valid');
-        errorMsg.textContent = 'Please enter a valid email address';
+        errorMsg.textContent = 'Valid email required';
         emailInput.style.background = errorBgColor;
         emailInput.style.color = errorColor;
     } else {
